@@ -5,6 +5,8 @@
 本项目是基于 **SBD (Semantic Boundaries Dataset) 增强的 Pascal VOC 2012 数据集**，复现了从经典 CNN（FCN, DeepLab, RefineNet）到前沿 Transformer（Swin-UNet, SETR, ViT-OCR）的主流分割模型。
 
 该项目不仅包含了各个模型的复现代码，还实现了一套包含 **混合精度训练 (AMP)**、**Lovász-Softmax Loss 微调** 以及 **自动可视化** 的完整训练流水线，希望能帮助到更多CV领域的初学者。
+> 本人仍在持续学习中，实现可能并非最优。<br>
+> 如有不当之处，恳请各位大佬不吝指教，欢迎交流讨论 🙏
 
 ##  Model Zoo (支持模型列表)
 
