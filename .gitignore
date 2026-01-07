@@ -1,0 +1,40 @@
+# === 1. System & IDE (系统与编辑器垃圾) ===
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# === 2. Python (缓存与环境) ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.env
+
+# === 3. Deep Learning Weights (权重文件-绝对别传) ===
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.pkl
+*.weights
+*.t7
+
+*.ipynb
+
+# === 4. Data & Logs (数据与日志) ===
+data/
+datasets/
+logs/
+runs/         # TensorBoard 日志
+wandb/        # Weights & Biases 日志
+results/
+output/
+checkpoints/
+*.log
+
+# === 5. Temporary (临时文件) ===
+tmp/
+.ipynb_checkpoints/
