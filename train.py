@@ -1,22 +1,21 @@
+import os
+
+import config
+os.environ["CUDA_VISIBLE_DEVICES"] = config.CUDA_VISIBLE_DEVICES
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-import os
 import numpy as np
 from datetime import datetime
-
-import config
 from src.dataset import VOCAugDataset
 from src.utils import IOUMetric
 from src.logger import ExperimentLogger   
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 from torch.optim.lr_scheduler import CosineAnnealingLR, LinearLR, SequentialLR
-
-# 设置显卡
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
 
 import cv2
 

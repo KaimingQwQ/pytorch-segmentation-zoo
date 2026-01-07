@@ -1,14 +1,15 @@
+import os
+
+import config
+os.environ["CUDA_VISIBLE_DEVICES"] = config.CUDA_VISIBLE_DEVICES
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-import os
-import numpy as np
 from datetime import datetime
 import cv2
-
-import config
 
 from src.dataset import VOCAugDataset
 from src.utils import IOUMetric
@@ -17,9 +18,6 @@ import albumentations as A
 from albumentations.pytorch import ToTensorV2
 from torch.optim.lr_scheduler import CosineAnnealingLR, LinearLR, SequentialLR
 from src.losses import CE_DiceLoss, CE_LovaszLoss
-
-# 设置显卡
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
 
 def get_transforms():
     """
@@ -84,7 +82,7 @@ def train_model():
     try:
         model = config.MODEL 
     except AttributeError:
-        model = config.MODLE 
+        raise ValueError("请在 config.py 中定义 MODEL 变量，指定要使用的模型。")
         
     model_name = model.__class__.__name__
 
