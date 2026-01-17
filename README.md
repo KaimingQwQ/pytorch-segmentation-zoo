@@ -26,11 +26,25 @@
 Based on *Pascal VOC 2012 (Augmented)* validation set  
 Image Size: **512 × 512**
 
-# Coming soon
+# updating
 
-| Model Name        | Backbone     | Pretrained | mIoU (Val) | Pixel Acc |
-| ----------------- | ------------ | ---------- | ---------- | --------- |
-| --         | --    | -        | —          | —         |
+| Model Name        | Backbone     | Pretrained | mIoU (Val) | 
+| ----------------- | ------------ | ---------- | ---------- | 
+| swin_unet         | swin_b    | imagenet        | —          | 
+| deeplabv3         | dia-resnet50   | coco        | 0.785          | 
+| deeplabv3_se         | dia-resnet50   | coco        | 0.786          | 
+| deeplabv3plus         | resnet50   | coco        | 0.789          | 
+| resnet_unet         | resnet50   | imagenet        | 0.662          | 
+| resnet_unet         | resnet101  | imagenet        | 0.684        | 
+| resnet_fcn         | resnet50   | imagenet        | 0.612         | 
+| pspnet         | resnet50   | imagenet        | 0.787        | 
+| pspnet         | resnet101  | imagenet        | 0.794          | 
+|refinenet         | resnet50   | imagenet        | 0.785         | 
+|refinenet         | resnet152   | imagenet        | 0.806        | 
+|segformer        | swin_b   | imagenet        | 0.805        |
+|swin_t_unet        | swin_t   | imagenet        | 0.783        |
+|swin_s_unet        | swin_s   | imagenet        | 0.811       |
+|swin_b_unet        | swin_b   | imagenet        | 0.820        |
 
 
 ## **📂 Dataset Preparation (数据集配置)**
