@@ -30,7 +30,6 @@ Image Size: **512 × 512**
 
 | Model Name        | Backbone     | Pretrained | mIoU (Val) | 
 | ----------------- | ------------ | ---------- | ---------- | 
-| swin_unet         | swin_b    | imagenet        | —          | 
 | deeplabv3         | dia-resnet50   | coco        | 0.785          | 
 | deeplabv3_se         | dia-resnet50   | coco        | 0.786          | 
 | deeplabv3plus         | resnet50   | coco        | 0.789          | 
